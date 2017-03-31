@@ -482,7 +482,7 @@ class Search
             $path,
             Request::GET,
             $query->toArray(),
-            array(self::OPTION_SEARCH_TYPE => self::OPTION_SEARCH_TYPE_COUNT)
+            array(self::OPTION_SEARCH_TYPE => self::OPTION_SEARCH_TYPE_QUERY_THEN_FETCH)
         );
         $resultSet = ResultSet::create($response, $query);
 
